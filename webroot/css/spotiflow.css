@@ -1,0 +1,126 @@
+/* Couleurs pastel girly */
+:root {
+    --color-bg: #f9f7f9; /* Fond clair pastel */
+    --color-surface: #ffffff; /* Blanc pour les surfaces */
+    --color-text: #333333; /* Texte sombre pour une bonne lisibilité */
+    --color-pink: #f7a8b8; /* Rose pastel */
+    --color-lavender: #e2a9e1; /* Lavande pâle */
+    --color-mint: #a8e1d6; /* Menthe douce */
+    --color-yellow: #f9e1a1; /* Jaune pastel */
+    --color-blue: #a7d8f3; /* Bleu clair */
+    --color-border: #f1d0d6; /* Bordures rose clair */
+    --color-table-header-bg: #f7d7e6; /* Fond des en-têtes de tableau (rose clair) */
+}
+
+/* Corps */
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.top-nav {
+    background: var(--color-surface);
+    padding: 20px 40px;
+    border-bottom: 2px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+.top-nav-title a {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-pink);
+}
+.top-nav-links {
+    text-align: right;
+}
+.top-nav-links a {
+    margin-left: 20px;
+    color: var(--color-text);
+}
+.top-nav-links a:hover {
+    color: var(--color-pink);
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--color-surface);
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+th {
+    background: var(--color-table-header-bg);
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+td {
+    background: var(--color-surface);
+}
+
+td:hover {
+    background-color: var(--color-pink);  /* Effet hover rose pastel pour les cellules */
+}
+
+/* Formulaires */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background: var(--color-surface);
+}
+
+button, input[type="submit"], .button {
+    background: var(--color-pink);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+button:hover, input[type="submit"]:hover, .button:hover {
+    background: var(--color-lavender);
+}
+
+/* Pagination */
+.pagination {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination li a {
+    padding: 6px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text);
+}
+
+.pagination li a:hover {
+    background-color: var(--color-mint);
+    color: #fff;
+}
